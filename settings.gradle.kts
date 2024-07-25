@@ -1,0 +1,1 @@
+rootProject.name = "kotlin-power-assert-demo"

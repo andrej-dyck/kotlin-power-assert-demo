@@ -1,8 +1,6 @@
-import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
-
 plugins {
     kotlin("jvm") version "2.0.0"
-    kotlin("plugin.power-assert") version "2.0.0"
+//    kotlin("plugin.power-assert") version "2.0.0"
 }
 
 group = "andrej.dyck.kotlin.power.assert.demo"
@@ -29,18 +27,18 @@ sourceSets["main"].resources.srcDirs("resources")
 sourceSets["test"].resources.srcDirs("test-resources")
 
 /* Power-Assert */
-@OptIn(ExperimentalKotlinGradlePluginApi::class)
-powerAssert {
-    functions = listOf(
-        "kotlin.assert",
-        "kotlin.require",
-        "kotlin.test.assert",
-        "kotlin.test.assertEquals",
-        "kotlin.test.assertNotNull",
-        "ad.demo.kotlin.powerassert.assertHasSku"
-    )
-    includedSourceSets = listOf("main", "test")
-}
+//@OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
+//powerAssert {
+//    functions = listOf(
+//        "kotlin.assert",
+//        "kotlin.require",
+//        "kotlin.test.assert",
+//        "kotlin.test.assertEquals",
+//        "kotlin.test.assertNotNull",
+//        "ad.demo.kotlin.powerassert.assertHasSku"
+//    )
+//    includedSourceSets = listOf("main", "test")
+//}
 
 /* Check with JUnit 5 */
 tasks.test {

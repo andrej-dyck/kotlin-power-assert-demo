@@ -2,6 +2,11 @@
 
 ![build](https://github.com/andrej-dyck/kotlin-power-assert-demo/actions/workflows/gradle-ci.yml/badge.svg?branch=main)
 
+>  "A compiler plugin that writes detailed assert failure messages for you"
+
+#### Example of a generated failure message
+![readme-failure-message-example.png](readme-failure-message-example.png)
+
 ## Documentation
 
 [📑 Kotlin's Power-assert compiler plugin](https://kotlinlang.org/docs/power-assert.html)
@@ -10,7 +15,6 @@
 
 #### Modify Cart Tests
 
-For example
 - make a test fail by changing test data
 - make a test fail by using invalid sku's or quantities
 - activate ignored tests

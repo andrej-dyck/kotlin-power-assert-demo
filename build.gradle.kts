@@ -16,8 +16,6 @@ repositories {
 dependencies {
     // kotlin-test
     testImplementation(kotlin("test"))
-    // parameterized tests
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.3")
     // AssertJ
     testImplementation("org.assertj:assertj-core:3.26.0")
 }
@@ -37,7 +35,9 @@ powerAssert {
         "kotlin.assert",
         "kotlin.require",
         "kotlin.test.assert",
-        "kotlin.test.assertEquals"
+        "kotlin.test.assertEquals",
+        "kotlin.test.assertNotNull",
+        "ad.demo.kotlin.powerassert.assertHasSku"
     )
     includedSourceSets = listOf("main", "test")
 }

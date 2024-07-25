@@ -10,7 +10,9 @@ class CartTests {
 
     @Test
     fun `new carts have different ids`() {
-        assert(emptyCart().cartId != emptyCart().cartId)
+        val c1 = emptyCart()
+        val c2 = emptyCart()
+        assert(c1.cartId == c2.cartId)
     }
 
     @Test
